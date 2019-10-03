@@ -24,6 +24,28 @@ In the page's footer, just before, include the required plugin files.
 
 ```
 
+### Available options
+```
+{
+        autoHeight: true, // if you want to set the below maximum height for the container
+        maxHeight: 100, // digits/string
+        duration: 100, // dropdown show/hide duration
+        theme: 'yellow', // container/dropdown color theme
+        showSelected: false, // show/hide already selected values
+        showSelectedDisabled: true, // show disabled to already selected values
+        remote: false, // array of objects[{'id': 1, 'text': 'Test 1'},{'id': 2, 'text': 'Test 2'}] / valid url
+        preselected: false, // array of objects of pre selected values
+        deleteIconHtml: '&#x2715;', // can place html
+        onSelect: function() {return true;},
+    }
+```
+
+### Available Method
+```
+$('.input-tag').tagText('get_tags');
+
+```
+
 ### Example
 ![Screenshot](tag-text-1.png)
 
