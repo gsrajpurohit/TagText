@@ -1,0 +1,310 @@
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+color: #fff;
+/*    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);*/
+  font-family: sans-serif;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.masthead {
+  margin-bottom: 40px !important;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+  color: #dc3545;
+}
+.share-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.share-links a:hover {
+    color: #dc3545;
+}
+.share-links a i {
+    padding: 10px;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+.nav-link.active {
+    color: #fff;
+}
+.masthead-brand sub {
+    position: relative;
+    font-size: 52%;
+    line-height: 0;
+    vertical-align: baseline;
+    color: #fff;
+    bottom: 0;
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+  margin-top: 40px !important;
+}
+
+.tag-container {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #00B3DB;
+    cursor: text;
+    min-width: 590px;
+    text-align: left;
+    color: #fff;
+}
+
+.tag-container.red {
+    border: 1px solid #ff0000;
+}
+
+.tag-container.green {
+    border: 1px solid #00a83b;
+}
+
+.tag-container.yellow {
+    border: 1px solid #ffc000;
+}
+
+.tag-container.scrollable {
+    overflow: auto;
+}
+
+.tag-container .tagtext,
+.tag-container .input-tag-text {
+    background: none;
+    width: 60px;
+    min-width: 30px;
+    border: 0;
+    height: 25px;
+    padding: 0;
+    margin-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.tag-container .tagtext:focus,
+.tag-container .input-tag-text:focus {
+    border: none;
+    outline: none;
+}
+
+.tag-row {
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-width: 100px;
+    margin: 0 0 2px 2px;
+    transition: all 0.6s ease-in-out;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+.tag-text {
+    display: inline-block;
+    cursor: default;
+}
+
+.tag-delete {
+    float: right;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.tag-delete:hover {
+    background-color: #c00;
+    color: #fff;
+}
+
+.uploader {
+    display: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: #effcff;
+}
+
+.text-selector {
+    display: none;
+    width: 350px;
+    position: absolute;
+    border: 1px solid #00B3DB;
+    background-color: #effcff;
+    border-radius: 3px;
+    padding: 0;
+    transition: all 0.6s ease-in-out;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.text-selector.red {
+    border: 1px solid #ff0000;
+    background-color: #ffcccc;
+}
+
+.text-selector.green {
+    border: 1px solid #00a83b;
+    background-color: #d3ffe3;
+}
+
+.text-selector.yellow {
+    border: 1px solid #ffc000;
+    background-color: #fff5d5;
+}
+
+.text-selector ul {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.list-tag {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.list-tag:hover {
+    background-color: #00B3DB;
+    color: #fff;
+}
+
+.list-tag.selected {
+    background-color: #ccc;
+    pointer-events: none;
+}
+.text-selector.red .list-tag.selected {
+    background-color: #fda9a9;
+    pointer-events: none;
+}
+
+.text-selector.green .list-tag.selected {
+    background-color: #aeffca;
+    pointer-events: none;
+}
+
+.text-selector.yellow .list-tag.selected {
+    background-color: #ffebb0;
+    pointer-events: none;
+}
+
+.text-selector.red .list-tag:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.text-selector.green .list-tag:hover {
+    background-color: #00a83b;
+    color: #fff;
+}
+
+.text-selector.yellow .list-tag:hover {
+    background-color: #ffc000;
+    color: #fff;
+}
+
+.loading-bar {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-bar:before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: -200px;
+    width: 200px;
+    height: 2px;
+    background-color: #2980b9;
+    animation: running_bar 2s linear infinite;
+}
+
+
+@keyframes running_bar {
+    from {
+        left: -200px;
+        width: 30%;
+    }
+
+    50% {
+        width: 30%;
+    }
+
+    70% {
+        width: 70%;
+    }
+
+    80% {
+        left: 50%;
+    }
+
+    95% {
+        left: 120%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+code {
+    color: #fff;
+}
+code span {
+    display: block;
+    margin-left: 30px;
+    text-align: left;
+}
+code span.val {
+    padding-left: 30px;
+}
+code span.val span {
+    padding-left: 30px;
+}
+hr {
+    border-top: 1px solid rgba(220, 53, 69, 0.5);
+}

@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TagText - Input tags</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="css/tag.text.css" />
+
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">
+            <div class="tag-row"><span class="tag-text">Tag-Text</span><span class="tag-delete">✕</span></div>
+             </h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="https://github.com/gsrajpurohit">G.S.Rajpurohit</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <p class="lead">
+          <a href="#" class="btn btn-sm btn-danger">Download</a>
+        </p>
+        <h2 class="cover-heading">Examples</h2>
+        <p class="lead"><input type="text" name="term" class="input-tag-text1 " />
+          <input type="text" name="term" class="input-tag-text2" />
+        </p>
+        <p>
+          <code>
+              <span>$('.input-tag-text1').tagText({</span>
+              <span class="val">autoHeight: false,</span>
+              <span class="val">duration: 100,</span>
+              <span class="val">theme: 'green',</span>
+              <span class="val">
+                remote: [
+                    <span>{id: 141, text: "Geological Mapping"},</span>
+                    <span>{id: 142, text: "Geophysics"},</span>
+                    <span>{id: 139, text: "Geotechnical Engineering"},</span>
+                    <span>{id: 143, text: "Go-to-market Strategy"},</span>
+                    <span>{id: 29, text: "Google Analytics"},</span>
+                    <span>{id: 120, text: "Google Docs"},</span>
+                    ],
+              </span>
+              <span class="val">showSelected: true</span>
+              <span>});</span>
+          </code>
+        </p>
+        <hr>
+        <p>
+          <code>
+              <span>$('.input-tag-text2').tagText({</span>
+              <span class="val">autoHeight: true,</span>
+              <span class="val">maxHeight: 250,</span>
+              <span class="val">duration: 100,</span>
+              <span class="val">theme: 'red',</span>
+              <span class="val">remote: 'get_object.php',</span>
+              <span class="val">
+                remote: [
+                    <span>{id: 3, text: 'Aerospace Industries'},</span>
+                    <span>{id: 9, text: 'Applied Mathematics'},</span>
+                    ],
+              </span>
+              <span class="val">showSelected: true</span>
+              <span class="val">onSelect: function(values){
+                  <span>console.log('return values: ', values);</span>
+              }</span>
+              <span>});</span>
+          </code>
+        </p>
+        <hr>
+        <p class="lead">
+          <a href="#" class="btn btn-sm btn-danger">Download</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p class="text-center share-links">
+                <a href="https://twitter.com/ganpatsingh" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/ganpat.rajpurohit.18/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/tonie.rajpurohit/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="mailto:rajpurohitganpat@gmail.com?subject=Hello">
+                    <i class="fa fa-google"></i>
+                </a>
+            </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- core JavaScript -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/tag.text.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+</html>
